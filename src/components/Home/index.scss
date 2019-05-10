@@ -1,0 +1,121 @@
+.home-container {
+  height: 100vh;
+
+  header {
+    position: absolute;
+    top: 50vh;
+    left: 20vw;
+    line-height: 0.1;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .hexagon-big {
+    width: 170px;
+    height: 200px;
+    fill: rgba(255, 255, 255, 0.1);
+
+    path {
+      opacity: 0.3;
+      stroke: white;
+      stroke-width: 3px;
+    }
+  }
+
+  .hexagon-medium {
+    width: 94px;
+    height: 108px;
+    fill: rgba(255, 255, 255, 0.1);
+
+    path {
+      opacity: 0.4;
+      stroke: white;
+      stroke-width: 3px;
+    }
+  }
+
+  .hexagon-small {
+    width: 33px;
+    height: 37px;
+    fill: rgba(255, 255, 255, 0.1);
+
+    path {
+      opacity: 0.8;
+      stroke: white;
+      stroke-width: 2px;
+    }
+  }
+
+  #hexagon-big-one {
+    position: absolute;
+    top: 94vh;
+    left: 40vw;
+    animation: 5s infinite alternate floating;
+  }
+
+  #hexagon-medium-one {
+    position: absolute;
+    top: 27vh;
+    left: 60vw;
+    animation: 5s infinite alternate floating;
+  }
+
+  #hexagon-medium-two {
+    position: absolute;
+    top: 80vh;
+    left: 5vw;
+    animation: 4s infinite alternate floating;
+  }
+
+  #hexagon-small-one {
+    position: absolute;
+    top: 15vh;
+    left: 30vw;
+    animation: 4s infinite alternate floating;
+  }
+
+  #hexagon-small-two {
+    position: absolute;
+    top: 42vh;
+    left: 10vw;
+    animation: 5s infinite alternate floating;
+  }
+
+  #hexagon-small-three {
+    position: absolute;
+    top: 75vh;
+    left: 65vw;
+    animation: floating 5s infinite alternate;
+  }
+
+    #hexagon-small-four {
+    position: absolute;
+    top: 115vh;
+    left: 9vw;
+    animation: spinning 20s linear infinite;
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
